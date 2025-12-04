@@ -3,55 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
-    <header>
-      <a>
-        <h1>Сайт города Седона</h1>
-        <img src="/images/logo.svg" alt="логотип Седоны"/>
-      </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">О Седоне</a>
-          </li>
-          <li>
-            <a href="#">Гостиницы</a>
+    <header class="header">
+      <div class="header-left">
+        <a class="logo">
+          <h1 class="visually-hidden">Сайт города Седона</h1>
+          <img class="logo-image" src="/images/logo.svg" alt="логотип Седоны"/>
+        </a>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li class="nav-links-item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="nav-links-item">
+              <a href="#">О Седоне</a>
+            </li>
+            <li class="nav-links-item">
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-right">
+        <ul class="user-menu">
+          <li class="user-menu-item">
+            <a href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          <li class="user-menu-item">
+            <a href="#">
+              <span class="visually-hidden">Список избранного</span>
+            </a>
           </li>
         </ul>
-      </nav>
-      <div>
-        <ul>
-          <li>
-            <a href="#">
-
-            </a>
-            <li>
-            <a href="#">
-
-            </a>
-          </li>
-        </ul>
-        <a href="#">
+        <a class="button" href="#">
           ХОЧУ СЮДА!
         </a>
       </div>
     </header>
-    <main>
+    <main class="main">
       <section>
         <h2>
 
         </h2>
-          <img/>
-          <p>
-
-          </p>
-          <p>
-
-          </p>
+        <img/>
+        <p>
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </p>
+        <p>
+          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+        </p>
       </section>
       <section>
         <h2>
@@ -61,46 +64,46 @@
           <li>
             <div>
               <p>
-
+                Настоящий городок
               </p>
               <p>
-
+                Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
             </div>
             <img src="/images/description-1.jpg"/>
           </li>
           <li>
             <p>
-
+              Небольшая площадь
             </p>
             <p>
-
-            </p>
-          </li>
-          <li>
-            <p>
-
-            </p>
-            <p>
-
+              Все достопримечательности находятся очень близко
             </p>
           </li>
           <li>
             <p>
-
+              Красивая дорога
             </p>
             <p>
-
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </li>
+          <li>
+            <p>
+              Мало туристов
+            </p>
+            <p>
+              Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
           <li>
             <img src="/images/description-2.jpg"/>
             <div>
               <p>
-
+                Там есть мост дьявола
               </p>
               <p>
-
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
             </div>
           </li>
@@ -154,19 +157,42 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <ul>
         <li>
-
+          <a>
+            <span>
+              Вконтакте
+            </span>
+          </a>
         </li>
         <li>
-
+          <a>
+            <span>
+              Телеграм
+            </span>
+          </a>
         </li>
         <li>
-
+          <a>
+            <span>
+              YouTube
+            </span>
+          </a>
         </li>
       </ul>
+      <a class="phone number">
+        <span class="visually-hidden">
+          Телефон для связи
+        </span>
+        +7 (812) 812-12-12
+      </a>
+      <a class="html-academy-link">
+        <span class="visually-hidden">
+          Ссылка на HTML-академию
+        </span>
+        <img src="/images/htmlacademy.svg" alt="HTML-академия"/>
+      </a>
     </footer>
-
   </body>
 </html>
