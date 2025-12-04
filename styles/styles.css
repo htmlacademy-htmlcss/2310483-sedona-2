@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans-400.woff2), format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans-700.woff2), format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*GLOBAL styles*/
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/*SHARED styles*/
+
+.visually-hidden {
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.big-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.small-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #756157;
+}
+
+.centered {
+  text-align: center;
+}
+
+/*HEADER styles*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 70px 0 70px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  list-style: none;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links-item {
+  padding: 20px 0 20px 0;
+  text-decoration: none;
+  color: #000000;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-button {
+  background-image: url(../images/svg/search.svg);
+  background-repeat: no-repeat;
+}
+
+.favorites-button {
+  background-image: url(../images/svg/favorites.svg);
+  background-repeat: no-repeat;
+}
+
+/*WELCOME SECTION styles*/
+
+.welcome-image-container {
+  background-color: #e3f0f8;
+  background-image: url(../images/svg/welcome-divider.svg),
+    url(../images/welcome-section-background-photo.jpg);
+  background-size: 1200px auto, cover;
+  background-repeat: no-repeat;
+  background-position: left bottom, center top;
+  padding: 51px 0 82px 0;
+}
+
+.welcome-image {
+  display: block;
+  margin: 0 auto;
+}
+
+/*FEATURES SECTION styles*/
+/*OPTIONS SECTION styles*/
+/*HOTEL SEARCH SECTION styles*/
+/*SUBSCRIPTION SECTION styles*/
+/*FOOTER styles*/
