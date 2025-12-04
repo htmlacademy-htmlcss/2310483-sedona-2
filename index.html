@@ -10,7 +10,7 @@
       <div class="header-left">
         <a class="logo">
           <h1 class="visually-hidden">Сайт города Седона</h1>
-          <img class="logo-image" src="/images/logo.svg" alt="логотип Седоны"/>
+          <img class="logo-image" src="/images/svg/logo.svg" alt="логотип Седоны"/>
         </a>
         <nav class="nav">
           <ul class="nav-links">
@@ -29,11 +29,11 @@
       <div class="header-right">
         <ul class="user-menu">
           <li class="user-menu-item">
-            <a href="#">
+            <a class="search-button" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           <li class="user-menu-item">
-            <a href="#">
+            <a class="favorites-button" href="#">
               <span class="visually-hidden">Список избранного</span>
             </a>
           </li>
@@ -64,9 +64,9 @@
         </h2>
         <ul class="features-list">
           <li class="features-item">
-            <p class="features-item-title">
+            <h3 class="features-item-title">
               Настоящий городок
-            </p>
+            </h3>
             <p class="features-item-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
@@ -75,36 +75,36 @@
             <img class="features-item-image" src="/images/description-1.jpg"/>
           </li>
           <li class="features-item">
-            <p class="features-item-title">
+            <h3 class="features-item-title">
               Небольшая площадь
-            </p>
+            </h3>
             <p class="features-item-description">
               Все достопримечательности находятся очень близко
             </p>
           </li>
           <li class="features-item">
-            <p class="features-item-title">
+            <h3 class="features-item-title">
               Красивая дорога
-            </p>
+            </h3>
             <p class="features-item-description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
           <li class="features-item">
-            <p class="features-item-title">
+            <h3 class="features-item-title">
               Мало туристов
-            </p>
+            </h3>
             <p class="features-item-description">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
           <li class="features-item">
-            <img class="features-item-image" src="/images/description-2.jpg"/>
+            <img class="features-item-image" src="/images/description-2.jpg" alt="Фото Гранд-Каньона">
           </li>
           <li class="features-item">
-            <p class="features-item-title">
+            <h3 class="features-item-title">
               Там есть мост дьявола
-            </p>
+            </h3>
             <p class="features-item-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
@@ -174,9 +174,8 @@
         <p class="small-text">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <form class="subscription-form">
-          <label>Введите ваш email</label>
-          <input class="subscription-form-input" type='email' name="email" placeholder="Ваш e-mail"/>
+        <form class="subscription-form" action="#" method="post">
+          <input class="subscription-form-input" type='email' name="email" placeholder="Ваш e-mail" required/>
           <button class="subscription-form-button" type="submit">
             Подписаться
           </button>
