@@ -1,0 +1,166 @@
+/* FILTERS SECTION */
+
+.filters-container {
+  margin: 0;
+  padding: 35px 70px 70px 70px;
+  color: #fff;
+  border: none;
+  background-image: url('../images/catalog/catalog-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ .filters-infrastructure {
+  margin: 0;
+  padding: 0;
+  border: none;
+ }
+
+.filters-infrastructure-legend {
+  margin: 0 0 32px 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.infrastructure-checkboxes-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.infrastructure-checkboxes-list > li + li {
+  margin-top: 16px;
+}
+
+.infrastructure-checkbox-label {
+  position: relative;
+  font-size: 18px;
+  line-height: 23px;
+  margin-left: 36px;
+}
+
+.infrastructure-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.infrastructure-checkbox-label::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -36px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 25%;
+  box-sizing: content-box;
+}
+
+.infrastructure-checkbox:focus
++
+.infrastructure-checkbox-label::before {
+  outline: 3px solid #83B3D3;
+  margin-right: 13px;
+}
+
+.infrastructure-checkbox:hover + .infrastructure-checkbox-label::before,
+.infrastructure-checkbox:hover + .infrastructure-checkbox-label {
+  opacity: 0.6;
+}
+
+.infrastructure-checkbox:active + .infrastructure-checkbox-label::before,
+.infrastructure-checkbox:active + .infrastructure-checkbox-label {
+  opacity: 0.3;
+}
+
+.infrastructure-checkbox:checked
++
+.infrastructure-checkbox-label::before {
+  background-image: url('../images/catalog/svg/check.svg');
+  background-repeat: no-repeat;
+  background-position: 60% 55%;
+}
+
+.filters-accomodation {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filters-accomodation-legend {
+  margin: 0 0 32px 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.accomodation-radio-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accomodation-radio-list > li + li {
+  margin-top: 16px;
+}
+
+.accomodation-radio {
+  position: absolute;
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.accomodation-radio-label {
+  position: relative;
+  font-size: 18px;
+  line-height: 23px;
+  margin-left: 36px;
+}
+
+.accomodation-radio-label::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -36px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.accomodation-radio:hover + .accomodation-radio-label,
+.accomodation-radio:hover + .accomodation-radio-label::before {
+  opacity: 0.6;
+}
+
+.accomodation-radio:active + .accomodation-radio-label,
+.accomodation-radio:active + .accomodation-radio-label::before {
+  opacity: 0.3;
+}
+
+.accomodation-radio:checked + .accomodation-radio-label::before {
+  background-image: url('../images/catalog/svg/point.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.filters-price {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* CATALOG SUBSCRIPTION */
+
+.catalog-subscription {
+  background-color: #ffffff;
+  padding: 96px 0 104px 0;
+  color: #ffffff;
+
+}
