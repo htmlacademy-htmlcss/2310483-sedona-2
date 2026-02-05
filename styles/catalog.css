@@ -342,11 +342,264 @@
 .reset-button:disabled {
   opacity: 0.1;
 }
-/* CATALOG SUBSCRIPTION */
 
-.catalog-subscription {
-  background-color: #ffffff;
-  padding: 96px 0 104px 0;
+/* LIST SECTION */
+
+.list-section {
+  padding: 50px 70px 60px 70px;
+}
+
+/* HOTELS LIST HEADER */
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotels-count {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 200px 0 0;
+  min-width: 338px;
+  word-break: break-all;
+}
+
+.list-sort {
+  position: relative;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 14px 20px;
+  appearance: none;
+  min-width: 292px;
+  margin: 0 70px 0 0;
+  background-image: url("../images/catalog/svg/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.list-sort:hover,
+.list-sort:focus,
+.list-sort:focus-visible {
+  border-color: #68A2CA;
+  outline: none;
+}
+
+.list-sort:disabled {
+  opacity: 0.3;
+}
+
+.list-view {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  column-gap: 8px;
+  flex-wrap: wrap;
+}
+
+.list-view-item {
+  display: inline-block;
+  position: relative;
+  padding: 17px 16px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+.list-view-item:hover,
+.list-view-item:active {
+  border-color: #000000;
+}
+
+.list-view-item:focus,
+.list-view-item:focus-visible {
+  border-color: #68A2CA;
+  outline: none;
+  outline-offset: none;
+}
+
+.tile-icon:before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/catalog/svg/tile.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 14px;
+  top: 16px;
+  left: 15px;
+}
+
+.card-icon:before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/catalog/svg/card.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 14px;
+  top: 16px;
+  left: 15px;
+}
+
+.list-icon:before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/catalog/svg/list.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 14px;
+  top: 16px;
+  left: 15px;
+}
+
+/* HOTELS LIST */
+
+.list-hotels-container {
+  padding: 40px 0;
+  margin: 0;
+}
+
+.list-hotels {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.hotel-card-container {
+  padding: 20px;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.hotel-card-image {
+  margin: 0 0 16px 0;
+  padding: 0;
+}
+
+.hotel-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0 0 16px 0;
+}
+
+.hotel-card-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
+}
+
+.hotel-card-type,
+.hotel-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.hotel-card-price {
+  text-align: right;
+}
+
+.hotel-card-button-more {
+  border: none;
+  border-radius: 4px;
+  background-color: #756157;
+  text-decoration: none;
   color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 8px 26px;
+}
 
+.hotel-card-button-more:hover,
+.hotel-card-button-more:focus,
+.hotel-card-button-more:focus-visible {
+  background-color: #615048;
+  outline: none;
+}
+
+.hotel-card-button-more:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-card-button-more:disabled {
+  background-color: #E5E5E5;
+}
+
+.hotel-card-button-favorites {
+  border: none;
+  border-radius: 4px;
+  background-color: #82B3D3;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: 700;
+  padding: 8px 26px;
+}
+
+.hotel-card-button-favorites:hover,
+.hotel-card-button-favorites:focus,
+.hotel-card-button-favorites:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.hotel-card-button-favorites:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.hotel-card-button-favorites:disabled {
+  background-color: #E5E5E5;
+}
+
+.hotel-card-stars {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6px;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+.star-icon {
+  background-image: url("../images/catalog/svg/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 17px;
+}
+
+.hotel-card-rate {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  padding: 9px 22px 8px 23px;
+}
+
+.catalog-pagination {
+  padding: 40px 0 0 0;
+  border-top: 1px solid #E5E5E5;
+}
+
+/* CATALOG SUBSCRIPTION SECTION */
+
+.calatalog-subscription {
+  background-color: #ffffff;
+  padding: 96px 258px 104px 258px;
 }

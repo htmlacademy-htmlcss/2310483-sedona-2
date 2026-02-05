@@ -11,7 +11,6 @@
       <header class="header">
         <div class="header-left">
           <a class="logo">
-            <h1 class="visually-hidden">Сайт города Седона</h1>
             <img
               class="logo-image"
               src="./images/svg/logo.svg"
@@ -58,7 +57,7 @@
       </header>
       <main>
         <section class="filters-container">
-            <form class="filters-form">
+            <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
                 <h1 class="catalog-title">Гостиницы Седоны</h1>
                 <div class="bread">
                 </div>
@@ -137,7 +136,7 @@
                       <button type="submit" class="submit-button">
                         Применить
                       </button>
-                      <button type="button" class="reset-button">
+                      <button type="reset" class="reset-button">
                         Сбросить
                       </button>
                     </fieldset>
@@ -145,8 +144,174 @@
                 </div>
             </form>
         </section>
-        <section>
+        <section class="list-section">
+          <header class="list-header">
+            <p class="hotels-count">
+              Найдено гостиниц: 38
+            </p>
+            <select name="hotel list sort" id="hotel list sort" class="list-sort">
+              <option value="cheap first" class="list-sort-item" selected>
+                Сначала дешевые
+              </option>
+              <option value="expensive first" class="list-sort-item">
+                Сначала дорогие
+              </option>
+              <option value="by popularity" class="list-sort-item">
+                Сначала популярные
+              </option>
+              <option value="by name" class="list-sort-item">
+                По имени
+              </option>
+            </select>
+            <ul class="list-view">
+              <li>
+                <a class="list-view-item tile-icon" href="catalog.html?view=tile">
+                  <span class="visually-hidden">отображение плиткой</span>
+                </a>
+              </li>
+              <li>
+                <a class="list-view-item card-icon" href="catalog.html?view=card">
+                  <span class="visually-hidden">отображение карточками</span>
+                </a>
+              </li>
+              <li>
+                <a class="list-view-item list-icon" href="catalog.html?view=list">
+                  <span class="visually-hidden">отображение списком</span>
+                </a>
+              </li>
+            </ul>
+          </header>
+          <div class="list-hotels-container">
+            <ul class="list-hotels">
+              <li>
+                <div class="hotel-card-container">
+                  <img src="./images/catalog/amara.jpg" class="hotel-card-image" alt="виды Седоны"/>
+                  <p class="hotel-card-title">
+                    Amara Resort & Spa
+                  </p>
+                  <div class="hotel-card-description">
+                    <p class="hotel-card-type">
+                      Гостиница
+                    </p>
+                    <p class="hotel-card-price">
+                      от 4000 р.
+                    </p>
+                    <button class="hotel-card-button-more">
+                      подробнее
+                    </button>
+                    <button class="hotel-card-button-favorites">
+                      в избранное
+                    </button>
+                    <ul class="hotel-card-stars">
+                      <li class="star-icon"></li>
+                      <li class="star-icon"></li>
+                      <li class="star-icon"></li>
+                      <li class="star-icon"></li>
+                    </ul>
+                    <p class="hotel-card-rate">
+                      Рейтинг: 8,5
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="hotel-card-container">
+                  <img src="./images/catalog/villas.jpg" class="hotel-card-image" alt="виды Седоны"/>
+                  <p class="hotel-card-title">
+                    Villas at Poco Diablo
+                  </p>
+                  <div class="hotel-card-description">
+                    <p class="hotel-card-type">
+                      Гостиница
+                    </p>
+                    <p class="hotel-card-price">
+                      от 5000 р.
+                    </p>
+                    <button class="hotel-card-button-more">
+                      подробнее
+                    </button>
+                    <button class="hotel-card-button-favorites">
+                      в избранное
+                    </button>
+                    <ul class="hotel-card-stars">
+                      <li class="star-icon"></li>
+                      <li class="star-icon"></li>
+                      <li class="star-icon"></li>
+                      <li class="star-icon"></li>
+                    </ul>
+                    <p class="hotel-card-rate">
+                      Рейтинг: 9,2
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="hotel-card-container">
+                  <img src="./images/catalog/desert.jpg" class="hotel-card-image" alt="виды Седоны"/>
+                  <p class="hotel-card-title">
+                    Desert Quail Inn
+                  </p>
+                  <div class="hotel-card-description">
+                    <p class="hotel-card-type">
+                      Гостиница
+                    </p>
+                    <p class="hotel-card-price">
+                      от 2500 р.
+                    </p>
+                    <button class="hotel-card-button-more">
+                      подробнее
+                    </button>
+                    <button class="hotel-card-button-favorites">
+                      в избранное
+                    </button>
+                    <ul class="hotel-card-stars">
+                      <li class="star-icon"></li>
+                      <li class="star-icon"></li>
+                      <li class="star-icon"></li>
+                      <li class="star-icon"></li>
+                    </ul>
+                    <p class="hotel-card-rate">
+                      Рейтинг: 6,9
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="hotel-card-container">
+                  <img src="./images/catalog/greenTree.jpg" class="hotel-card-image" alt="виды Седоны"/>
+                  <p class="hotel-card-title">
+                    GreenTree Inn
+                  </p>
+                  <div class="hotel-card-description">
+                    <p class="hotel-card-type">
+                      Гостиница
+                    </p>
+                    <p class="hotel-card-price">
+                      от 1500 р.
+                    </p>
+                    <button class="hotel-card-button-more">
+                      подробнее
+                    </button>
+                    <button class="hotel-card-button-favorites">
+                      в избранное
+                    </button>
+                    <ul class="hotel-card-stars">
+                      <li class="star-icon"></li>
+                      <li class="star-icon"></li>
+                      <li class="star-icon"></li>
+                      <li class="star-icon"></li>
+                    </ul>
+                    <p class="hotel-card-rate">
+                      Рейтинг: 5,0
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog-pagination">
 
+          </div>
         </section>
         <section class="calatalog-subscription">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
@@ -157,7 +322,7 @@
             Только полезная информация и никакого спама,<br />честное
             бойскаутское!
           </p>
-          <form class="subscription-form" action="#" method="post">
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <input
               class="subscription-form-input"
               type="email"
@@ -229,7 +394,7 @@
           </li>
         </ul>
         <div class="phone-numbers">
-          <a class="phone-number" href="#">
+          <a class="phone-number" href="tel:+78128121212">
             <span class="visually-hidden"> Телефон для связи </span>
             +7 (812) 812-12-12
           </a>
