@@ -59,8 +59,19 @@
         <section class="filters-container">
             <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
                 <h1 class="catalog-title">Гостиницы Седоны</h1>
-                <div class="bread">
-                </div>
+                  <ul class="breadcrumbs">
+                    <li>
+                      <a href="./index.html" class="breadcrumbs-item breadcrumbs-home">
+                      </a>
+                    </li>
+                    <li class="breadcrumbs-arrow">
+                    </li>
+                    <li>
+                      <a href="./catalog.html" class="breadcrumbs-item">
+                        Гостиницы
+                      </a>
+                    </li>
+                  </ul>
                 <div class="filters">
                   <div class="filters-left">
                     <fieldset class="filters-infrastructure">
@@ -96,19 +107,19 @@
                           <li>
                             <input type="radio" id="hotel" value="hotel" name="accomodation-type" class="accomodation-radio" checked>
                             <label for="hotel" class="accomodation-radio-label">
-                              Hotel
+                              Гостиница
                             </label>
                           </li>
                           <li>
                             <input type="radio" id="motel" value="motel" name="accomodation-type" class="accomodation-radio">
                             <label for="motel" class="accomodation-radio-label">
-                              Motel
+                              Мотель
                             </label>
                           </li>
                           <li>
                             <input type="radio" id="apartment" value="apartment" name="accomodation-type" class="accomodation-radio">
                             <label for="apartment" class="accomodation-radio-label">
-                              Apartment
+                              Апартаменты
                             </label>
                           </li>
                         </ul>
@@ -117,12 +128,12 @@
                   </div>
                   <div class="filters-right">
                     <fieldset class="filters-price">
-                      <legend class="filters-price-legend">Стоимость, руб:</legend>
+                      <legend class="filters-price-legend">Стоимость, ₽:</legend>
                       <div class="price-setup">
                         <label for="price-from" class="price-from-label">от</label>
                         <input type="number" class="price-from" name="price-from" id="price-from" value="0" min="0" max="10000">
                         <label for="price-to" class="price-to-label">до</label>
-                        <input type="number" class="price-to" name="price-to" id="price-to" value="10000" min="0" max="10000">
+                        <input type="number" class="price-to" name="price-to" id="price-to" value="9000" min="0" max="10000">
                       </div>
                       <div class="price-slider">
                         <button type="button" class="price-slider-button-left">
@@ -194,7 +205,7 @@
                       Гостиница
                     </p>
                     <p class="hotel-card-price">
-                      от 4000 р.
+                      От 4000 р.
                     </p>
                     <button class="hotel-card-button-more">
                       подробнее
@@ -225,7 +236,7 @@
                       Гостиница
                     </p>
                     <p class="hotel-card-price">
-                      от 5000 р.
+                      От 5000 р.
                     </p>
                     <button class="hotel-card-button-more">
                       подробнее
@@ -256,7 +267,7 @@
                       Гостиница
                     </p>
                     <p class="hotel-card-price">
-                      от 2500 р.
+                      От 2500 р.
                     </p>
                     <button class="hotel-card-button-more">
                       подробнее
@@ -265,7 +276,6 @@
                       в избранное
                     </button>
                     <ul class="hotel-card-stars">
-                      <li class="star-icon"></li>
                       <li class="star-icon"></li>
                       <li class="star-icon"></li>
                       <li class="star-icon"></li>
@@ -287,7 +297,7 @@
                       Гостиница
                     </p>
                     <p class="hotel-card-price">
-                      от 1500 р.
+                      От 1500 р.
                     </p>
                     <button class="hotel-card-button-more">
                       подробнее
@@ -296,8 +306,6 @@
                       в избранное
                     </button>
                     <ul class="hotel-card-stars">
-                      <li class="star-icon"></li>
-                      <li class="star-icon"></li>
                       <li class="star-icon"></li>
                       <li class="star-icon"></li>
                     </ul>
@@ -309,8 +317,39 @@
               </li>
             </ul>
           </div>
-          <div class="catalog-pagination">
-
+          <div class="catalog-pagination-container">
+            <ul class="catalog-pagination">
+              <li>
+                <button class="pagination-button pagination-button-active">
+                  1
+                </button>
+              </li>
+              <li>
+                <button class="pagination-button">
+                  2
+                </button>
+              </li>
+              <li>
+                <button class="pagination-button">
+                  3
+                </button>
+              </li>
+              <li>
+                <button class="pagination-button">
+                  4
+                </button>
+              </li>
+              <li>
+                <button class="pagination-button pagination-ellipses">
+                  ...
+                </button>
+              </li>
+              <li>
+                <button class="pagination-button">
+                  10
+                </button>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="calatalog-subscription">
