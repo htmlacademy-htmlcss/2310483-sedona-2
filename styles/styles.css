@@ -457,7 +457,7 @@ input, button {
 
 .subscription-form-button {
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
@@ -466,6 +466,7 @@ input, button {
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
   margin: 0;
+  width: 232px;
 }
 
 .subscription-form-button:hover,
