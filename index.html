@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
     <div class="container">
@@ -17,7 +17,7 @@
               alt="логотип Седоны"
               width="140"
               height="70"
-            />
+            >
           </a>
           <nav class="nav">
             <ul class="nav-links">
@@ -66,7 +66,8 @@
               src="./images/svg/welcome.svg"
               width="458"
               height="352"
-            />
+              alt="Приветственная картинка"
+            >
           </div>
         </section>
         <section class="features">
@@ -91,7 +92,7 @@
                 class="features-item-image"
                 src="./images/description-1.jpg"
                 alt="Город Седона"
-              />
+              >
             </li>
             <li class="features-item">
               <h3 class="features-item-title">Небольшая площадь</h3>
@@ -116,9 +117,9 @@
                 class="features-item-image"
                 src="./images/description-2.jpg"
                 alt="Фото Гранд-Каньона"
-              />
+              >
               <div class="features-item-text-wrapper">
-                <h3 class="features-item-title">Там есть<br />мост дьявола</h3>
+                <h3 class="features-item-title">Там есть<br>мост дьявола</h3>
                 <p class="features-item-description">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
@@ -164,7 +165,7 @@
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <p class="hotel-search-title big-text centered">Заинтересовались?</p>
           <p class="hotel-search-description small-text centered">
-            Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
+            Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
           <a class="hotel-search-button button-brown" href="#">
@@ -177,7 +178,7 @@
             Подпишитесь на рассылку
           </p>
           <p class="subscription-description small-text centered">
-            Только полезная информация и никакого спама,<br />честное
+            Только полезная информация и никакого спама,<br>честное
             бойскаутское!
           </p>
           <form
@@ -192,7 +193,7 @@
               placeholder="Ваш e-mail"
               required
               autocomplete="email"
-            />
+            >
             <button class="subscription-form-button" type="submit">
               Подписаться
             </button>
@@ -329,7 +330,7 @@
               class="modal-input check-in-input"
               value="27 апреля 2020"
               placeholder="Укажите дату заезда"
-            />
+            >
             <p class="check-in-input-alert">
               Мы не можем отправить вас в прошлое.
             </p>
@@ -342,7 +343,7 @@
               value="1 сентября 2023"
               placeholder="Укажите дату выезда"
               class="modal-input check-out-input"
-            />
+            >
             <p class="check-out-input-alert">
               На эти даты есть свободные номера. Пока есть.
             </p>
@@ -353,7 +354,7 @@
               <div class="modal-counter">
                 <button type="button" class="decrease-button">
                   <span class="visually-hidden">
-                    Укажите количество детей
+                    Укажите количество взрослых
                   </span>
                   <svg
                     class="minus-icon"
@@ -368,10 +369,10 @@
                 </button>
                 <input
                   type="text"
-                  id="children"
+                  id="adult"
                   class="modal-input modal-number-input"
                   value="2"
-                />
+                >
                 <button type="button" class="increase-button">
                   <span class="visually-hidden">
                     Добавить количество детей
@@ -391,12 +392,12 @@
             </div>
             <div class="modal-children-counter">
               <label for="children" class="modal-label">
-                Дети:<button class="modal-tooltip">
-                  <p class="tooltip-window">
-                    Укажите количество детей,<br />которые будут с вами,
-                    возраст<br />которых от 6 до 18 лет. Дети<br />до 6 лет
-                    размещаются<br />бесплатно.
-                  </p>
+                Дети:<button type="button" id="tooltip" class="modal-tooltip">
+                  <span class="tooltip-window">
+                    Укажите количество детей,<br>которые будут с вами,
+                    возраст<br>которых от 6 до 18 лет. Дети<br>до 6 лет
+                    размещаются<br>бесплатно.
+                  </span>
                   <span class="visually-hidden"> Показать подсказку </span>
                 </button>
               </label>
@@ -421,7 +422,7 @@
                   id="children"
                   class="modal-input modal-number-input"
                   value="2"
-                />
+                >
                 <button type="button" class="increase-button">
                   <span class="visually-hidden">
                     Добавить количество детей
