@@ -60,7 +60,7 @@
 
 .filters-container {
   margin: 0;
-  padding: 35px 70px 70px 70px;
+  padding: 33px 70px 70px 70px;
   color: #fff;
   border: none;
   background-image: url('../images/catalog/catalog-background.jpg');
@@ -537,7 +537,7 @@
 }
 
 .hotel-card-container {
-  padding: 20px;
+  padding: 17px 20px 20px 20px;
   border: 1px solid #E5E5E5;
   border-radius: 4px;
   width: 340px;
@@ -560,7 +560,7 @@
 .hotel-card-description {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px 20px;
+  gap: 14px 20px;
 }
 
 .hotel-card-type,
@@ -581,6 +581,8 @@
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
   padding: 10px 0;
   box-sizing: border-box;
@@ -609,6 +611,8 @@
   color: #ffffff;
   text-transform: uppercase;
   white-space: nowrap;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
   padding: 10px 0;
   box-sizing: border-box;
@@ -622,6 +626,8 @@
   color: #ffffff;
   text-transform: uppercase;
   white-space: nowrap;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
   padding: 10px 0;
   box-sizing: border-box;
