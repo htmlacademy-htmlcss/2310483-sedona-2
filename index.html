@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
+      <header class="header" data-test="header">
         <div class="header-left">
           <a class="logo">
             <h1 class="visually-hidden">Сайт города Седона</h1>
@@ -55,8 +55,8 @@
           <a class="button-brown header-right-button" href="#">ХОЧУ СЮДА!</a>
         </div>
       </header>
-      <main class="main">
-        <section class="welcome">
+      <main class="main" data-test="main">
+        <section class="welcome" data-test="hero">
           <div class="welcome-image-container">
             <h2 class="visually-hidden">
               Добро пожаловать на сайт города Седона!
@@ -70,7 +70,7 @@
             >
           </div>
         </section>
-        <section class="features">
+        <section class="features" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="features-description">
             <p class="features-description-title big-text centered">
@@ -127,7 +127,7 @@
             </li>
           </ul>
         </section>
-        <section class="options">
+        <section class="options" data-test="service">
           <h2 class="visually-hidden">Все включено!</h2>
           <div class="options-invitation">
             <p class="options-invitation-title big-text centered">
@@ -161,7 +161,7 @@
             </li>
           </ul>
         </section>
-        <section class="hotel-search">
+        <section class="hotel-search" data-test="search">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <p class="hotel-search-title big-text centered">Заинтересовались?</p>
           <p class="hotel-search-description small-text centered">
@@ -172,7 +172,7 @@
             ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
           </a>
         </section>
-        <section class="subscription">
+        <section class="subscription" data-test="subscribe">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <p class="subscription-title big-text centered">
             Подпишитесь на рассылку
@@ -200,7 +200,7 @@
           </form>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" data-test="footer">
         <ul class="socials-list">
           <li class="socials-item">
             <a class="vk-icon" href="https://vk.com/htmlacademy">
@@ -314,7 +314,7 @@
       </footer>
     </div>
     <div class="modal-container modal-closed">
-      <div class="modal-window">
+      <div class="modal-window" data-test="modal">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <button class="modal-button-close"></button>
         <form
