@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Макареев](https://up.htmlacademy.ru/htmlcss-individual/2/user/2310483).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
+* Мой проект: [Sedona Project](https://kheprikreator.github.io/2310483-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
