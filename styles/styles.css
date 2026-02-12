@@ -1330,6 +1330,7 @@ body {
 }
 
 .price-from-label {
+  font-family: inherit;
   position: absolute;
   top: 30%;
   left: 37%;
@@ -1338,6 +1339,7 @@ body {
 }
 
 .price-to {
+  font-family: inherit;
   position: relative;
   border: none;
   border-radius: 0 4px 4px 0;
