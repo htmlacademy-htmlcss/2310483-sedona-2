@@ -340,6 +340,7 @@
                 value="27 апреля 2020"
                 placeholder="Укажите дату заезда"
                 required
+                name="check-in"
               />
               <p class="alert error">Мы не можем отправить вас в прошлое.</p>
             </div>
@@ -356,6 +357,7 @@
                 placeholder="Укажите дату выезда"
                 class="modal-input check-out-input"
                 required
+                name="check-out"
               />
               <p class="alert">На эти даты есть свободные номера. Пока есть.</p>
             </div>
@@ -387,6 +389,7 @@
                   class="modal-input modal-number-input"
                   value="2"
                   required
+                  name="adult-count"
                 />
                 <button type="button" class="increase-button">
                   <span class="visually-hidden">
@@ -406,8 +409,9 @@
               </div>
             </div>
             <div class="modal-children-counter">
-              <label for="children tooltip" class="modal-label-counters">
-                Дети:<span class="modal-tooltip">
+              <div class="modal-label-counters">
+               <label for="children">Дети:</label>
+               <span class="modal-tooltip">
                   <button type="button" id="tooltip" class="modal-tooltip-button">
                     <span class="tooltip-window">
                       Укажите количество детей, <br>которые будут с вами,
@@ -417,7 +421,7 @@
                     <span class="visually-hidden"> Показать подсказку </span>
                   </button>
                 </span>
-              </label>
+              </div>
               <div class="modal-counter">
                 <button type="button" class="decrease-button">
                   <span class="visually-hidden">
@@ -440,6 +444,7 @@
                   class="modal-input modal-number-input"
                   value="2"
                   required
+                  name="childrens-count"
                 />
                 <button type="button" class="increase-button">
                   <span class="visually-hidden">
@@ -455,8 +460,6 @@
                   >
                     <path
                       d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"
-                      fill="#756157"
-                      fill-opacity="0.3"
                     />
                   </svg>
                 </button>
