@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./styles/styles.css">
   </head>
 
@@ -11,7 +11,7 @@
     <div class="container">
       <header class="header" data-test="header">
         <div class="header-left">
-          <a class="logo">
+          <a class="logo" href="./index.html">
             <img
               class="logo-image"
               src="./images/svg/logo.svg"
@@ -88,7 +88,7 @@
             <li class="features-item-with-image">
               <div class="features-item-text-wrapper">
                 <h3 class="features-item-title">Настоящий городок</h3>
-                <p class="features-item-description">
+                <p class="features-item-description white-text">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
@@ -96,6 +96,8 @@
                 class="features-item-image"
                 src="./images/description-1.jpg"
                 alt="Город Седона"
+                width="800"
+                height="385"
               >
             </li>
             <li class="features-item">
@@ -121,10 +123,12 @@
                 class="features-item-image"
                 src="./images/description-2.jpg"
                 alt="Фото Гранд-Каньона"
+                width="800"
+                height="385"
               >
               <div class="features-item-text-wrapper">
                 <h3 class="features-item-title">Там есть<br>мост дьявола</h3>
-                <p class="features-item-description">
+                <p class="features-item-description white-text">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
               </div>
@@ -181,7 +185,7 @@
           <p class="subscription-title big-text centered">
             Подпишитесь на рассылку
           </p>
-          <p class="subscription-description small-text centered">
+          <p class="subscription-description small-text centered white-text">
             Только полезная информация и никакого спама, <br>честное
             бойскаутское!
           </p>
@@ -269,7 +273,7 @@
             +7 (812) 812-12-12
           </a>
         </div>
-        <a class="html-academy-link" href="https://htmlacademy.ru/">
+        <a class="html-academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden"> Ссылка на HTML-академию </span>
           <svg
             class="html-academy-icon"
@@ -321,7 +325,7 @@
     <div class="modal-container modal-closed">
       <div class="modal-window" data-test="modal">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <button class="modal-button-close"></button>
+        <button type="button" class="modal-button-close"><span class="visually-hidden">закрыть окно поиска отеля</span></button>
         <form
           action="https://echo.htmlacademy.ru/"
           method="get"
@@ -336,6 +340,7 @@
                 class="modal-input check-in-input"
                 value="27 апреля 2020"
                 placeholder="Укажите дату заезда"
+                required
               />
               <p class="alert error">Мы не можем отправить вас в прошлое.</p>
             </div>
@@ -351,6 +356,7 @@
                 value="1 сентября 2023"
                 placeholder="Укажите дату выезда"
                 class="modal-input check-out-input"
+                required
               />
               <p class="alert">На эти даты есть свободные номера. Пока есть.</p>
             </div>
@@ -381,6 +387,7 @@
                   id="adult"
                   class="modal-input modal-number-input"
                   value="2"
+                  required
                 />
                 <button type="button" class="increase-button">
                   <span class="visually-hidden">
@@ -400,7 +407,7 @@
               </div>
             </div>
             <div class="modal-children-counter">
-              <label for="children" class="modal-label-counters">
+              <label for="children tooltip" class="modal-label-counters">
                 Дети:<span class="modal-tooltip">
                   <button type="button" id="tooltip" class="modal-tooltip-button">
                     <span class="tooltip-window">
@@ -433,6 +440,7 @@
                   id="children"
                   class="modal-input modal-number-input"
                   value="2"
+                  required
                 />
                 <button type="button" class="increase-button">
                   <span class="visually-hidden">
