@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./images/favicon.png"/>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-
   <body>
     <div class="container">
       <header class="header" data-test="header">
@@ -68,7 +67,7 @@
               </a>
             </li>
             <li class="breadcrumbs-wrapper">
-              <a href="./catalog.html" class="breadcrumbs-item"> Гостиницы </a>
+              <a class="breadcrumbs-item breadcrumbs-item-current" href="./catalog.html"> Гостиницы </a>
             </li>
           </ul>
           <form
@@ -217,48 +216,50 @@
         <section class="list-section" data-test="catalog">
           <header class="list-header">
             <p class="hotels-count">Найдено гостиниц: 38</p>
-            <select
-              name="hotel list sort"
-              id="hotel-list-sort"
-              class="list-sort"
-            >
-              <option value="cheap first" class="list-sort-item" selected>
-                Сначала дешевые
-              </option>
-              <option value="expensive first" class="list-sort-item">
-                Сначала дорогие
-              </option>
-              <option value="by popularity" class="list-sort-item">
-                Сначала популярные
-              </option>
-              <option value="by name" class="list-sort-item">По имени</option>
-            </select>
-            <ul class="list-view">
-              <li>
-                <a
-                  class="list-view-item tile-icon list-view-item-current"
-                  href="catalog.html?view=tile"
-                >
-                  <span class="visually-hidden">отображение плиткой</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="list-view-item card-icon"
-                  href="catalog.html?view=card"
-                >
-                  <span class="visually-hidden">отображение карточками</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="list-view-item list-icon"
-                  href="catalog.html?view=list"
-                >
-                  <span class="visually-hidden">отображение списком</span>
-                </a>
-              </li>
-            </ul>
+            <div class="list-header-right">
+              <select
+                name="hotel list sort"
+                id="hotel-list-sort"
+                class="list-sort"
+              >
+                <option value="cheap first" class="list-sort-item" selected>
+                  Сначала дешевые
+                </option>
+                <option value="expensive first" class="list-sort-item">
+                  Сначала дорогие
+                </option>
+                <option value="by popularity" class="list-sort-item">
+                  Сначала популярные
+                </option>
+                <option value="by name" class="list-sort-item">По имени</option>
+              </select>
+              <ul class="list-view">
+                <li>
+                  <a
+                    class="list-view-item tile-icon list-view-item-current"
+                    href="catalog.html?view=tile"
+                  >
+                    <span class="visually-hidden">отображение плиткой</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="list-view-item card-icon"
+                    href="catalog.html?view=card"
+                  >
+                    <span class="visually-hidden">отображение карточками</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="list-view-item list-icon"
+                    href="catalog.html?view=list"
+                  >
+                    <span class="visually-hidden">отображение списком</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </header>
           <div class="list-hotels-container">
             <h2 class="visually-hidden">Список гостиниц</h2>
@@ -269,14 +270,16 @@
                     src="./images/catalog/amara.jpg"
                     class="hotel-card-image"
                     alt="виды Седоны"
+                    width="300"
+                    height="212"
                   />
                   <p class="hotel-card-title">Amara Resort & Spa</p>
                 </a>
                 <div class="hotel-card-description">
                   <p class="hotel-card-type">Гостиница</p>
                   <p class="hotel-card-price">От 4000 ₽</p>
-                  <button class="hotel-card-button-more">подробнее</button>
-                  <button class="hotel-card-button-favorites">
+                  <a class="hotel-card-button-more" href="#">подробнее</a>
+                  <button type="button" class="hotel-card-button-favorites">
                     в избранное
                   </button>
                   <div class="hotel-card-stars stars-4"></div>
@@ -289,14 +292,16 @@
                     src="./images/catalog/villas.jpg"
                     class="hotel-card-image"
                     alt="виды Седоны"
+                    width="300"
+                    height="212"
                   />
                   <p class="hotel-card-title">Villas at Poco Diablo</p>
                 </a>
                 <div class="hotel-card-description">
                   <p class="hotel-card-type">Гостиница</p>
                   <p class="hotel-card-price">От 5000 ₽</p>
-                  <button class="hotel-card-button-more">подробнее</button>
-                  <button class="hotel-card-button-favoreted">
+                  <a class="hotel-card-button-more" href="#">подробнее</a>
+                  <button type="button" class="hotel-card-button-favoreted">
                     в избранном
                   </button>
                   <div class="hotel-card-stars stars-4"></div>
@@ -309,14 +314,16 @@
                     src="./images/catalog/desert.jpg"
                     class="hotel-card-image"
                     alt="виды Седоны"
+                    width="300"
+                    height="212"
                   />
                   <p class="hotel-card-title">Desert Quail Inn</p>
                 </a>
                 <div class="hotel-card-description">
                   <p class="hotel-card-type">Гостиница</p>
                   <p class="hotel-card-price">От 2500 ₽</p>
-                  <button class="hotel-card-button-more">подробнее</button>
-                  <button class="hotel-card-button-favorites">
+                  <a class="hotel-card-button-more" href="#">подробнее</a>
+                  <button type="button" class="hotel-card-button-favorites">
                     в избранное
                   </button>
                   <div class="hotel-card-stars stars-3"></div>
@@ -329,14 +336,16 @@
                     src="./images/catalog/greenTree.jpg"
                     class="hotel-card-image"
                     alt="виды Седоны"
+                    width="300"
+                    height="212"
                   />
                   <p class="hotel-card-title">GreenTree Inn</p>
                 </a>
                 <div class="hotel-card-description">
                   <p class="hotel-card-type">Гостиница</p>
                   <p class="hotel-card-price">От 1500 ₽</p>
-                  <button class="hotel-card-button-more">подробнее</button>
-                  <button class="hotel-card-button-favorites">
+                  <a class="hotel-card-button-more" href="#">подробнее</a>
+                  <button type="button" class="hotel-card-button-favorites">
                     в избранное
                   </button>
                   <div class="hotel-card-stars stars-2"></div>
@@ -348,7 +357,7 @@
           <div class="catalog-pagination-container">
             <ul class="catalog-pagination">
               <li>
-                <a class="pagination-button pagination-button-active" href="">
+                <a class="pagination-button pagination-button-active">
                   1
                 </a>
               </li>
@@ -376,7 +385,7 @@
             Подпишитесь на рассылку
           </p>
           <p class="subscription-description small-text centered">
-            Только полезная информация и никакого спама, <br>честное
+            Только полезная информация и никакого спама, <br />честное
             бойскаутское!
           </p>
           <form
@@ -463,7 +472,7 @@
             +7 (812) 812-12-12
           </a>
         </div>
-        <a class="html-academy-link" href="https://htmlacademy.ru/">
+        <a class="html-academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden"> Ссылка на HTML-академию </span>
           <svg
             class="html-academy-icon"
